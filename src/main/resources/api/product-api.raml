@@ -1,0 +1,25 @@
+#%RAML 1.0
+title: product-api
+mediaType:
+  - application/json
+protocols:
+  - HTTP
+/products:
+  get:
+    responses:
+      "200":
+        body:
+          description: to get all products
+          properties:
+            productID:
+              example: "123111"
+              type: string
+            productName:
+              example: Dell
+              type: string
+            productProvider:
+              example: Dell.com
+              type: string
+            productDescription:
+              example: laptop
+              type: string
